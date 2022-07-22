@@ -36,12 +36,6 @@ __本脚本仅在目前应用最新版本上测试成功（Windows10、msys20220
   
 4. 双击该脚本，就是现在！让它帮你自动完成配置
   
-# 到底做了什么？
-  你可以对该脚本右键编辑自己查看，不过我想大部分人都没有这个耐心。
-  1. 脚本首先更新了msys2并用pacman安装了必要的clang，cmake，git等程序。
-  2. git将我们需要的coc.nvim、auto-pairs克隆到vim的pack目录。将ccls源码克隆到用户目录。nodejs的npm安装yarn并编译coc.nvim，编译安装ccls
-  3. 配置coc.nvim使用ccls lsp，配置从ccls github负制过来的。配置_vimrc，就加载了默认配置文件，设置了下字体
-  
 # 使用这些配置的理由？
   msys2：主要是它的操作和Linux很像，利用包管理器可以很方便下载各种需要的工具。
   
